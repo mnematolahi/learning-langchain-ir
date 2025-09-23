@@ -1,4 +1,4 @@
-# کدهای تمرین لنگ چین از کتاب آموزش لنگ چین که برای راحتی استفاده از ای پی آی ["سایت متیس"](metisai.ir) استفاده شده. 
+# کدهای تمرین لنگ چین از کتاب آموزش لنگ چین که برای راحتی استفاده از ای پی آی ["سایت متیس"].(metisai.ir) استفاده شده. 
 
 This repository contains code examples (in python and javascript) from each chapter of the book ["Learning LangChain: Building AI and LLM Applications with LangChain and LangGraph"](https://www.oreilly.com/library/view/learning-langchain/9781098167271/) published by O'Reilly Media.
 
