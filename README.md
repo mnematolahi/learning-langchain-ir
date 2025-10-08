@@ -3,7 +3,6 @@
 ## قبل از اجرا می توانید طبق دستورات زیر venv (یک محیط ایزوله و جداگانه) محیط مربوطه را ایجاد کنید تا تداخلی با سایر برنامه های شما نداشته باشد.
 ### در زمان نصب به صورت اتوماتیک تمامی نیازمندی های برنامه نویسی شما نصب خواهد شد و نیاز به نصب جداگانه ندارید.
 
-This repository contains code examples (in python and javascript) from each chapter of the book ["Learning LangChain: Building AI and LLM Applications with LangChain and LangGraph"](https://www.oreilly.com/library/view/learning-langchain/9781098167271/) published by O'Reilly Media.
 
 To run the examples, you can clone the repository and run the examples in your preferred language folders.
 
