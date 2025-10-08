@@ -1,0 +1,29 @@
+from langchain_core.prompts import ChatPromptTemplate
+from rich import print
+
+# Let's assume the user's name is known somewhere in your application
+user_name = "Sarah"
+
+# 1. Define the template using from_messages
+# We've added a new variable named user_name in the system template
+template = ChatPromptTemplate.from_messages(
+    [
+        ("system", "You are a personal assistant for a user named {user_name}. Always be polite and helpful."),
+        ("human", "Hello, I have a question about {topic}."),
+        ("ai", "Of course! How can I help you with {topic}?"),
+        ("human", "{user_question}")
+    ]
+)
+
+# 2. Create a new template by partially filling in some of the variables
+# We are telling the template that the user_name variable should always be filled with the predefined value
+prompt_with_partial = template.partial(user_name=user_name)
+
+# 3. Now, fill the template with the rest of the variables that are known at runtime
+final_prompt = prompt_with_partial.invoke({
+    "topic": "learning Python",
+    "user_question": "What is the best book to start learning Python?"
+})
+
+# We print the final output to see how everything has been combined
+print(final_prompt.to_messages())
